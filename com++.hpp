@@ -21,6 +21,10 @@
 
 COMXX_BEGIN
 
+#ifdef __APPLE__
+using ::std::nullptr_t;
+#endif
+
 typedef struct
 {
     unsigned long d1;
